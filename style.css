@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+    --bgwork: hsl(15, 100%, 70%);
+    --bgexercise: hsl(145, 58%, 55%);
+    --bgplay: hsl(195, 74%, 62%);
+    --bgsocial: hsl(264, 64%, 52%);
+    --bgstudy: hsl(348, 100%, 68%);
+    --bgselfcare: hsl(43, 84%, 65%);
+
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+
+    --fonteNormal: Arial, Helvetica, sans-serif;
+    --fonte: 'Rubik', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--VeryDarkBlue);
+    font-family: var(--fonteNormal);
+    font-family: var(--fonte);
+    font-size: 18px;
+}
+
+main{
+    /* background-color: violet; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 960px; */
+    width: auto;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.perfil-info{
+    margin: 10px;
+    /* z-index: 0; */
+}
+
+img#foto{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+div.perfil{
+    position: relative;
+    background-color: #4a38f1;
+    width: 160px;
+    height: 270px;
+    padding: 30px;
+    border-radius: 25px;
+    top: -60px;
+    z-index: 2;
+}
+
+div#dia-semana-mes{
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--DarkBlue);
+    width: 160px;
+    height: 70px;
+    padding: 90px 30px 30px 30px;
+    z-index: 1;
+    border-radius: 0px 0px 25px 25px;
+}
+
+div#dia-semana-mes>p{
+    padding: 2px;
+    font-weight: 400;
+    color: var(--DesaturatedBlue);
+    cursor: pointer;
+    
+}
+
+div#dia-semana-mes>p#week{
+    color: #fff;
+}
+
+div#dia-semana-mes>p:hover{
+    color: #fff;
+    transition-duration: .3s;
+}
+
+p#report{
+    color: var(--PaleBlue);
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+p#name{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+li div.tempo-topo{
+    position: relative;
+    padding: 0px 25px 0px 25px;
+    text-align: right;
+    width: 170PX;
+    height: 70px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+li div#work{
+    background-color: var(--bgwork);
+}
+
+li div#exercise{
+    background-color: var(--bgexercise);
+}
+
+li div#play{
+    background-color: var(--bgplay);
+}
+
+li div#social{
+    background-color: var(--bgsocial);
+}
+
+li div#study{
+    background-color: var(--bgstudy);
+}
+
+li div#self-care{
+    background-color: var(--bgselfcare);
+}
+
+li div.conteudo{
+    position: relative;
+    top: -19px;
+    background-color: var(--DarkBlue);
+    height: 110px;
+    width: 170px;
+    border-radius: 19px;
+    padding: 25px;
+    cursor: pointer;
+}
+
+li div.conteudo:hover{
+    background-color: hsl(237, 26%, 29%);
+    transition-duration: .3s;
+}
+
+div.conteudo> p.categoria{
+    color: #fff;
+    font-weight: 400;
+}
+
+div.conteudo img.tres-pontos{
+    position: relative;
+    top: -25px;
+    left: 90%;
+    padding: 2px;
+}
+
+div.conteudo img.tres-pontos:hover{
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+div.conteudo p.tempo-hora{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: -13px;
+}
+
+div.conteudo p.ultima-semana{
+    color: var(--PaleBlue);
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    /* columns: 3; */
+    width: 720px;
+    height: 460px;
+    flex-wrap: wrap;
+}
+
+li{
+    margin: 10px;
+    height: 210px;
+}
+
+@media screen and (max-width:960px){
+    ul{
+        width: 486px;
+        overflow-y: scroll;
+    }
+    
+    ul::-webkit-scrollbar{
+        background-color: transparent;
+        width: 6px;
+    }
+    
+    ul::-webkit-scrollbar-thumb{
+        background-color: var(--DesaturatedBlue);
+        width: 15px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 726px){
+    body::-webkit-scrollbar{
+        width: 6px;
+        background-color: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb{
+        background-color: var(--DesaturatedBlue);
+        width: 15px;
+        border-radius: 10px;
+    }
+
+    main{
+        flex-direction: column;
+        height: auto;
+        transform: translate(0%,0%);
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        /* margin: auto; */
+    }
+
+    div.perfil-info{
+        width: 90%;
+        height: auto;
+        position: relative;
+    }
+
+    div.perfil{
+        /* padding: 20px 10px; */
+        top: 10px;
+        width: 86%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    p#report{
+        position: relative;
+        left: 30px;
+        top: 20px;
+        margin: 0;
+        display: block;
+        width: 85px;
+        font-size: 2.5vw;
+    }
+
+    p#name{
+        position: relative;
+        top: 40px;
+        left: -30px;
+        display: block;
+        width: 265px;
+        font-size: 5vw;
+    }
+
+    div#dia-semana-mes{
+        bottom: -80px;
+        width: 86%;
+        display: flex;
+        /* padding: 20px; */
+        justify-content: space-around;
+    }
+
+    div#dia-semana-mes>p{
+        position: relative;
+        bottom: -45px;
+    }
+
+    li div.tempo-topo{
+        width: 88%;
+    }
+
+    li div.conteudo{
+        width: 88%;
+    }
+
+    img.tres-pontos{
+        right: 40px;
+    }
+
+    ul{
+        margin-top: 90px;
+        overflow: hidden;
+        height: auto;
+        width: 90%;
+        justify-content: center;
+    }
+
+    li{
+        width: 100%;
+    }
+
+    div.container-last-week{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

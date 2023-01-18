@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Time tracking dashboard</title>
+</head>
+<body>
+    <main id="container">
+        <div class="perfil-info">
+            <div class="perfil">
+                <img id="foto" src="images/image-jeremy.png" alt="foto de perfil">
+                <p id="report">Report for</p>
+                <p id="name">Jeremy Robson</p>
+            </div>
+            <div id="dia-semana-mes">
+                <p id="day">Daily</p>
+                <p id="week">Weekly</p>
+                <p id="month">Monthly</p>
+            </div>
+        </div>
+       
+            <ul>
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="work"><img src="images/icon-work.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Work</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">32hrs</p>
+                            <p class="ultima-semana">Last Week - 36hrs</p>
+                        </div>
+                    </div>
+                </li>
+               
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="play"><img src="images/icon-play.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Play</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">10hrs</p>
+                            <p class="ultima-semana">Last Week - 8hrs</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="study"><img src="images/icon-study.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Study</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">4hrs</p>
+                            <p class="ultima-semana">Last Week - 7hrs</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="exercise"><img src="images/icon-exercise.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Exercise</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">4hrs</p>
+                            <p class="ultima-semana">Last Week - 5hrs</p>
+                        </div>
+                    </div>
+                </li>
+                
+
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="social"><img src="images/icon-social.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Social</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">5hrs</p>
+                            <p class="ultima-semana">Last Week - 10hrs</p>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="tempo-gasto">
+                    <div class="tempo-topo" id="self-care"><img src="images/icon-self-care.svg" alt=""></div>
+                    <div class="conteudo">
+                        <p class="categoria">Self Care</p>
+                        <img class="tres-pontos" src="images/icon-ellipsis.svg">
+                        <div class="container-last-week">
+                            <p class="tempo-hora">2hrs</p>
+                            <p class="ultima-semana">Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
