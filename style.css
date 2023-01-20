@@ -14,7 +14,7 @@
     --DarkBlue: hsl(235, 46%, 20%);
     --DesaturatedBlue: hsl(235, 45%, 61%);
     --PaleBlue: hsl(236, 100%, 87%);
-
+    
     --fonteNormal: Arial, Helvetica, sans-serif;
     --fonte: 'Rubik', sans-serif;
 
@@ -88,7 +88,7 @@ div#dia-semana-mes>p{
     
 }
 
-div#dia-semana-mes>p#week{
+.ativo{
     color: #fff;
 }
 
